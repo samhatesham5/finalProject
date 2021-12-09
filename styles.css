@@ -708,10 +708,6 @@ h2 {
   }
 
 
-  .backSection > p {
-    font-size: 2rem;
-  }
-
   .backSection > img {
       width: 70vmin;
       height: 80vmin;
@@ -792,5 +788,13 @@ h2 {
 .middleHalf >  .textOne > h2 {
     font-size: 1.5rem;
   }
+
+.backSection > .backOne > h2 {
+  font-size: 1.5rem;
+  }
+
+.backSection > .backOne > p {
+  font-size: 1.2rem;
+}
 
 }
