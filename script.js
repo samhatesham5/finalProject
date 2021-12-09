@@ -9,10 +9,9 @@ I kind of wanna do a typing text thing for the "I spend 6hrs on Instagram" + JSO
 
 //Importing HTML elements//
 document.addEventListener("DOMContentLoaded", function() {
-  importJSON = document.getElementById("importDiv");
+  importJSON = document.getElementById("importDiv")
 }
-
-)
+);
 
 //Creating JSON database//
 

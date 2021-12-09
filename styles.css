@@ -781,4 +781,16 @@ h2 {
       font-size: 2rem;
   }
 
+  .middleHalf > .textOne > p {
+    font-size: 1.2rem;
+  }
+
+  .middleHalf > .textOne > p > a {
+    font-size: 1.2rem;
+  }
+
+.middleHalf >  .textOne > h2 {
+    font-size: 1.5rem;
+  }
+
 }
