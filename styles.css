@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Sketch&family=Nunito:wght@300;400&family=Playfair+Display:ital@0;1&display=swap');
+
+/* fonts
+
+font-family: 'Londrina Outline', cursive;
+font-family: 'Londrina Sketch', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Playfair Display', serif;
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+/*Homepage Styles*/
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.header {
+  display: flex;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 2.5rem;
+  color: #92c3c2;
+  justify-content: center;
+  padding: 3px;
+  letter-spacing: .2rem;
+}
+
+.navBar > a:link, .button > a:link {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  font-size: 1rem;
+  transition: .03s;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.navBar > a:visited, .button > a:visited {
+  color: black;
+  transition: .03s;
+}
+
+.navBar > a:hover {
+  color: #add9dd;
+  font-weight: bold;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.upperBody {
+  display: flex;
+  align-content: center;
+  background-image: url("images/marble-back-dark.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  margin-top: 5vmin;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+}
+
+.headerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*
+.headerImg {
+  width: 40%;
+  height: 300px;
+  border-radius: 30px;
+}
+
+*/
+
+.definition {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: white;
+}
+
+.definition > p {
+  font-family: 'Nunito', sans-serif;
+  padding: 2vmin;
+}
+
+.special {
+  color: #cae5e5;
+  font-weight: bold;
+}
+
+ .headerCard > h2, .headerCard > p {
+  text-align: center;
+  padding: 2vmin;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.upperBody > .headerCard > p {
+  font-style: italic;
+}
+
+.middleHalf {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 30% 30% 30% 10%;
+  margin-top: 5vmin;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+}
+
+.middleHalf > .textOne > h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 5vmin;
+  text-align: center;
+}
+
+
+.textOne {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 2 / span 4;
+  grid-column-gap: 10vmin;
+  grid-row: 1;
+  margin: 15px;
+  text-align: justify;
+}
+
+.middleHalf > .textOne > p {
+  font-family: 'Playfair Display', serif;
+}
+
+.textOne > p >  a {
+  font-style: italic;
+  font-size: .8rem;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+}
+
+
+
+
+.backSection {
+  display: flex;
+  background-image: url('images/faces-dark.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  grid-row: 2;
+  grid-column: 1 / span 6;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.picTwo {
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.backOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  background-color: white;
+  padding-left: 5vmin;
+  padding-right: 5vmin;
+  padding-top: 5vmin;
+}
+
+.textTwo {
+  font-size: .9rem;
+}
+
+.button {
+  padding: 10px;
+  margin: 5vmin;
+  background-color: #add9dd;
+  width: 30vmin;
+  transition: 0.3s;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 20px;
+  border-style: none;
+  text-align: center;
+}
+
+
+.button:hover {
+  background-color: #dbe3f1;
+  color: black;
+
+}
+
+.actionSection {
+  grid-row: 3;
+  grid-column: 1/ span 6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url('images/watercolor.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+
+.actionHeader {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2vmin;
+  margin-top: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.actionSection > .actionOne > p {
+    text-align: justify;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+}
+
+.actionOne {
+  margin: 50px;
+  padding: 10px;
+}
+
+.extraSpace {
+  margin: 150px;
+}
+
+.middleHalf > .textOne > h2 {
+  font-size: 1rem;
+}
+
+.middleHalf > .textOne > p {
+  font-size: 1rem;
+}
+
+.middleHalf > .textOne > a {
+  font-size: 1rem;
+}
+
+/*Influence Page*/
+
+  .navTwo > a:link, a:visited, a:active {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .navTwo > a:hover {
+    color: #add9dd;
+    font-weight: bold;
+  }
+
+  .navTwo {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vmin;
+  }
+
+.influenceHeader {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://storage.needpix.com/rsynced_images/trees-1707141_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.influenceHeader > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #92c3c2;
+  padding: 3vmin;
+  letter-spacing: .2rem;
+  font-style: italic;
+  text-shadow: 0px 4px 6px black;
+}
+
+/*
+
+.influenceSub {
+  display: flex;
+  justify-content: center;
+  padding: 10vmin;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+*/
+
+.influenceMid {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(6, 16.66%);
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+  grid-row-gap: 15vmin;
+  margin-top: 10vmin;
+}
+
+.reasonOne {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  border-radius: 2px;
+  width: 100%;
+  padding: 2vmin;
+}
+
+.reasonOne > p, .reasonTwo > p, .reasonThree > p, .reasonFour > p {
+  font-size: .9rem;
+}
+
+.influencLink {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+.maslow {
+  grid-column: 4 / span 5;
+  grid-row: 1;
+  width: 50vw;
+  height: 50vh;
+  margin-top: 10vmin;
+}
+
+.maslow > img {
+  object-fit: contain;
+}
+
+.reasonOne > h2, .reasonThree > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2vmin;
+  font-family: 'Nunito', sans-serif;
+}
+
+.reasonTwo > h2, .reasonFour > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2vmin;
+  font-family: 'Nunito', sans-serif;
+}
+
+.reasonTwo {
+  grid-column: 4 / span 5;
+  grid-row:  2;
+  border-radius: 2px;
+  width: 100%;
+  padding: 2vmin;
+}
+
+.reasonThree {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  width: 100%;
+  border-radius: 2px;
+  padding: 2vmin;
+}
+
+ .reasonFour {
+  grid-column: 4 / span 5;
+  grid-row: 4;
+  width: 100%;
+  border-radius: 2px;
+  padding: 2vmin;
+}
+
+.answerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / span 6;
+  grid-row: 5;
+  background-color: #f4f4e8;
+  padding: 10vmin;
+  margin-bottom: 30vmin;
+  margin-top: 10vmin;
+  text-align: center;
+  font-style: italic;
+}
+
+.answerCard > p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.influenceCall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/green-back.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15vmin;
+}
+
+.smallCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  width: 85vw;
+  background-color: #f4f4e8;
+  font-size: 1.2rem;
+}
+
+.smallCard > h2 {
+  font-size: 1.8rem;
+  padding: 2vmin;
+  text-align: center;
+}
+
+.smallCard > p {
+  padding-right: 5vmin;
+  padding-left: 5vmin;
+}
+
+/*Tips & Tricks Header*/
+.tipsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('images/circle-blue-back.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 50vh;
+  padding: 3vmin;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+  margin-top: 5vmin;
+  text-align: center;
+}
+
+.tipsHeader > h2 {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+.tipsHeader > p {
+  font-family: 'Nunito', sans-serif;
+  font-style: italic;
+}
+
+.tipsUpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+  margin-left: 10vmin;
+  margin-top: 10vmin;
+  padding: 5vmin;
+  gap: 5vmin;
+}
+
+.tipsUpper > h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.allTips {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+  gap: 5vmin;
+}
+
+.generalPop > h2, .activismPop > h2, .beautyPop > h2, .gamesPop > h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  color: #92c3c2;
+}
+
+.generalPop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  margin-top: 10vmin;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+}
+
+.tipHeaders {
+  font-size: 1.5rem;
+  color: #94b581;
+}
+
+.generalOne, .generalTwo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gamesThree {
+  margin-bottom: 5vmin;
+}
+
+.line {
+  text-align: center;
+}
+
+/*Resources Page*/
+
+.resourceHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vmin;
+  padding: 15vmin;
+  background-image: url('https://s2.favim.com/orig/151115/aesthetic-blue-lakes-paradise-Favim.com-3574110.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+
+.resourceHeader > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  font-style: italic;
+  text-shadow: 0px 4px 6px black;
+  color: #cfd5eb;
+}
+
+.responseCall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10vmin;
+}
+
+.responseCall > p {
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.italic {
+  font-style: italic;
+  padding: 5vmin;
+  text-align: center;
+}
+
+#importJSON {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
+}
+
+.newDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f4f4e8;
+  margin: 5vmin;
+  padding: 5vmin;
+  width: 300px;
+}
+
+.innerDiv {
+  text-align: center;
+  padding: 2vmin;
+}
+
+.innerDiv > p {
+  color: #2b416e;
+}
+
+.innerDiv > h2 {
+  color: #2b416e;
+}
+
+.newDiv > img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+
+/*Media Query for Smaller Devices*/
+
+@media only screen and (max-width: 480px) {
+  .picOne {
+    width: 30vmin;
+    height: 70vmin;
+  }
+
+  .picTwo {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .textOne {
+    margin-bottom: 10vh;
+  }
+
+  .textTwo {
+    font-size: .9rem;
+  }
+
+  /*
+
+  .middleHalf > .textOne > h2 {
+    font-size: 1rem;
+  }
+
+  .middleHalf > .textOne > p {
+    font-size: .8rem;
+  }
+
+  .middleHalf > .textOne > a {
+    font-size: .8rem;
+  }
+
+  */
+
+  .upperBody {
+    margin-top: 2vmin;
+  }
+
+  .backSection > img {
+      width: 35vmin;
+      height: 35vmin;
+  }
+
+  .headerCard {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .smallCard {
+    height: 80vh;
+  }
+
+
+  .middleHalf > .textOne > h2 {
+    font-size: .8rem;
+  }
+
+  .middleHalf > .textOne > p {
+    font-size: .8rem;
+  }
+
+  .middleHalf > .textOne > a {
+    font-size: .8rem;
+  }
+
+
+}
+
+
+/*Media Query for Larger Devices*/
+
+@media only screen and (min-width: 992px) {
+
+
+  .upperBody {
+    margin-left: 15vmin;
+    margin-right: 15vmin;
+  }
+
+
+  .backSection > p {
+    font-size: 2rem;
+  }
+
+  .backSection > img {
+      width: 70vmin;
+      height: 80vmin;
+  }
+
+  .backOne {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .textTwo {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    font-size: 4rem;
+  }
+
+
+  .actionSection > .actionOne > p {
+      text-align: justify;
+      margin-left: 20vmin;
+      margin-right: 20vmin;
+      font-size: 1.5rem;
+  }
+
+  .generalPop, .tipsUpper, .resourceHeader {
+    margin-right: 25vmin;
+    margin-left: 25vmin;
+
+  }
+
+  .reasonOne > p, .reasonTwo > p, .reasonThree > p, .reasonFour > p {
+    font-size: 1.2rem;
+  }
+
+  .influenceLink {
+    font-size: 1.2rem;
+  }
+    .allTips {
+      margin-left: 20vmin;
+      margin-right: 20vmin;
+    }
+
+}
