@@ -734,6 +734,10 @@ h2 {
     font-size: 4rem;
   }
 
+.textOne > p {
+  font-size: 1.5rem;
+}
+
 
   .actionSection > .actionOne > p {
       text-align: justify;
@@ -755,9 +759,26 @@ h2 {
   .influenceLink {
     font-size: 1.2rem;
   }
-    .allTips {
+
+  .allTips {
       margin-left: 20vmin;
       margin-right: 20vmin;
     }
+
+  .allTips > p {
+      font-size: 1.5rem;
+  }
+
+  .allTips > h2 {
+      font-size: 2rem;
+  }
+
+  .tipsUpper > p{
+      font-size: 1.5rem;
+  }
+
+  .tipsUpper > h2 {
+      font-size: 2rem;
+  }
 
 }
